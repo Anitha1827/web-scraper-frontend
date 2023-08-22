@@ -1,0 +1,36 @@
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pagination-item {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.pagination-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pagination-controls button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-controls button.active {
+  background-color: #333;
+  color: white;
+}

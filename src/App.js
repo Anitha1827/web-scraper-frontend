@@ -1,28 +1,23 @@
-import React, { useEffect } from 'react'
-import './App.css';
-import Sidenav from './components/Sidenav';
-import Contentarea from './components/Contentarea';
-import Flipkart from './Flipkart/Flipkart';
-import Search from './Flipkart/Search';
-import Login from './components/Login';
-
+import React, { useEffect } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Flipkart from "./Flipkart/Flipkart";
+import Search from "./Flipkart/Search";
+import Navbar from "./components/Navbar";
+import Pagination from "./components/Pagination";
 
 function App() {
-
-  useEffect(()=>{
-    return () =>{};
-  },[])
+  useEffect(() => {
+    return () => {};
+  }, []);
   return (
     <div className="App">
-     <div className='app-layout'>
-     <Sidenav/>
-      <Contentarea>
-      <Search/>
-      <Login/>
-      <Flipkart/>
-      
-      </Contentarea>
-     </div>
+      <div className="app-layout">
+        <Navbar />
+        <Search />
+        <Flipkart />
+        <Pagination />
+      </div>
     </div>
   );
 }

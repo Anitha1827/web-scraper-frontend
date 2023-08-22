@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react";
+import "./Navbar.css";
 
 function Navbar() {
   return (
-    <div className='navbar'>
-       <div className="brand-container">
-        <img
-          src="https://img.favpng.com/19/18/19/logo-e-commerce-electronic-business-png-favpng-eN3uDxqPs3mfprC0GG6u29kJb.jpg"
-          alt="logo"
-        />
-      </div>
-    </div>
-  )
+    <nav className="navbar">
+      <div className="navbar-logo">Web Scaper</div>
+      <ul className="navbar-menu">
+        <li>
+          <a href="link">Login/Signup</a>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
