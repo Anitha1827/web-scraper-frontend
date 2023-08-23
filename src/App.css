@@ -69,26 +69,26 @@
     font-weight: 500;
     margin: 0 0 20px 0;
   }
-
-  > .shop-card-listing {
-    > .shop-card {
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      width: 300px;
-      background-color: white;
-      border-radius: 10px;
-      margin: 20px;
-      position: relative;
-      height: auto;
-      transition: transform 0.5s > img {
-        width: 100%;
-        object-fit: contain;
-      }
-    }
-  }
 }
+
+.shop-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+  height: auto;
+  transition: transform 0.5s;
+}
+.shop-card > img {
+  width: 100%;
+  object-fit: contain;
+}
+
 .offer-container {
   align-items: center;
   padding-top: 10px;
