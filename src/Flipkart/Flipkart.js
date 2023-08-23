@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Fade } from "react-awesome-reveal";
 
 function Flipkart() {
   const [shopdata, setShopdata] = useState([]);
@@ -47,24 +46,22 @@ function Flipkart() {
                   {data.rating}
                   <small>⭐</small>
                 </h2>
-                <Fade>
-                  <p className="selling-price">{data.finalPrice}</p>
-                </Fade>
+
+                <p className="selling-price">{data.finalPrice}</p>
 
                 <del className="actual-price">{data.price}</del>
-                <Fade>
-                  <div className="offer-container">
-                    <a
-                      href="https://web-scraper-backend1.vercel.app/auth/products"
-                      className="productlink"
-                    >
-                      <p className="offer">
-                        Check in{" "}
-                        <span style={{ color: "black" }}>{data.source}</span>
-                      </p>
-                    </a>
-                  </div>
-                </Fade>
+
+                <div className="offer-container">
+                  <a
+                    href="https://web-scraper-backend1.vercel.app/auth/products"
+                    className="productlink"
+                  >
+                    <p className="offer">
+                      Check in{" "}
+                      <span style={{ color: "black" }}>{data.source}</span>
+                    </p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
