@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <Search />
         <Flipkart />
-        <Pagination />
+        {/* <Pagination /> */}
       </div>
     </div>
   );

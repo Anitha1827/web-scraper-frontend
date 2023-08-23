@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Tada from "react-reveal/Tada";
-import Spin from "react-reveal/Spin";
+import { Fade } from "react-awesome-reveal";
 
 function Flipkart() {
   const [shopdata, setShopdata] = useState([]);
@@ -48,12 +47,12 @@ function Flipkart() {
                   {data.rating}
                   <small>⭐</small>
                 </h2>
-                <Tada>
+                <Fade>
                   <p className="selling-price">{data.finalPrice}</p>
-                </Tada>
+                </Fade>
 
                 <del className="actual-price">{data.price}</del>
-                <Spin>
+                <Fade>
                   <div className="offer-container">
                     <a
                       href="https://web-scraper-backend1.vercel.app/auth/products"
@@ -65,7 +64,7 @@ function Flipkart() {
                       </p>
                     </a>
                   </div>
-                </Spin>
+                </Fade>
               </div>
             </div>
           </div>
